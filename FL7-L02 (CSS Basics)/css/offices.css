@@ -1,0 +1,167 @@
+.container {}
+
+.country {
+	float: left;
+	position: relative;
+	width: calc(25% - 24px);
+	margin: 12px;
+	overflow: hidden;
+}
+
+.country:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.country img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.country-name {
+	position: absolute;
+	top: 80%;
+	height: 120%;
+	width: 100%;
+	padding: 20px 0;
+	background: rgba(0, 0, 0, .54);
+	color: #fff;
+	text-align: center;
+	font-size: 21px;
+	font-weight: 700;
+	font-family: 'oswald-bold', helvetica, sans-serif, arial;
+	transition: top .3s;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.country:hover > a > .country-name {
+	top: -20%;
+	height: 120%;
+}
+
+.country-name > h3 {
+	margin: 0;
+	font-size: 36px;
+}
+
+.country-name > h1 {
+	font-size: 140px;
+	margin: 25% 0 10px;
+}
+
+.country-name > h2 {
+	font-size: 48px;
+	margin: 0;
+}
+
+#description {
+	width: calc(100% - 64px);
+	margin: 12px;
+	height: 400px;
+	float: left;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+	position: relative;
+	padding: 40px 0 40px 40px;
+	transition: all 1s ease;
+}
+
+#description:not(:target) {
+	display: none;
+}
+
+#description:target {
+	display: block;
+}
+
+#description:after,
+#description:before {
+	left: calc(12.5% - 24px);
+	top: -10px;
+	border: solid transparent;
+	content: " ";
+	position: absolute;
+}
+
+#description:before {
+	border-color: transparent transparent #ccc transparent;
+	border-width: 9px;
+	margin-top: -8px;
+	margin-left: -1px;
+}
+
+#description:after {
+	border-color: transparent transparent #f7f7f7 transparent;
+	border-width: 8px;
+	margin-top: -6px;
+}
+
+.close {
+	position: absolute;
+	right: 12px;
+	top: 11px;
+	color: #dfd6d6;
+	text-decoration: none;
+	transform: scaleY(1.2);
+	font-size: 14px;
+}
+
+.office-country {
+	font-family: 'oswald-bold', helvetica, sans-serif, arial;
+	color: #39c2d7;
+	font-size: 30px;
+	transform: scaleY(1.5);
+	font-weight: 700;
+	margin-top: 0;
+}
+
+.offices {}
+
+.office {
+	display: inline-block;
+	width: 20%;
+	border-left: 1px solid #ccc;
+	padding-left: 45px;
+	font-family: 'source-sans-pro-bold', sans-serif, helvetica, aria;
+}
+
+.office:first-of-type {
+	border-left: none;
+}
+
+.office-city {
+	font-size: 20px;
+	margin: 4px 0 15px;
+	color: #464547;
+	position: relative;
+}
+
+.office-city:before {
+	background-image: url(../img/marker.png);
+    background-size: 22px 26px;
+    display: inline-block;
+    width: 22px;
+    height: 26px;
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: -4px;
+}
+
+.office > p {
+	margin: 2px;
+	color: #464547;
+    font-size: 18px;
+}
+
+.office > a {
+	color: #7f993a;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 2px 15px;
+    display: inline-block;
+}

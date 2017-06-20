@@ -1,0 +1,61 @@
+.logo .text {
+    font-family: 'source-sans-pro-regular',sans-serif,helvetica,arial;
+    font-size: 160px;
+    font-stretch: ultra-condensed;
+    color: #464547;
+    display: inline-block;
+    transform: scaleY(1.2);
+    padding: 0 10px;
+}
+
+.triangle {
+    display: inline-block;
+    border-top: solid transparent;
+    border-bottom: solid transparent;
+    top: 12px;
+}
+
+.triangle-blue {
+    border-width: 50px;
+    position: relative;
+}
+
+.triangle-white {
+    border-width: 25px;
+    position: absolute;
+    top: -25px;
+}
+
+.triangle-left-blue {
+    border-right: 50px solid #39C2D7;
+}
+
+
+.triangle-right-blue {
+    border-left: 50px solid #39C2D7;
+}
+
+.triangle-left-blue:before,
+.triangle-right-blue:after {
+    content: "";
+    width: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: -23px;
+    height: 50px;
+    display: inline-block;
+}
+
+.triangle-right-blue:after {
+    right: 0;
+}
+
+.triangle-left-white {
+    border-right: 25px solid #fff;
+    left: 25px;
+}
+
+.triangle-right-white {
+    border-left: 25px solid #fff;
+    right: 25px;
+}
