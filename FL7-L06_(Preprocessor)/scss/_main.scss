@@ -1,0 +1,121 @@
+$bodyFont: null !default;
+$bodyFontColor: null !default;
+$bodyBg: null !default;
+$contentBg: null !default;
+$headerColor: null !default;
+$headerStyle: null !default;
+$imgBorderColor: null !default;
+$imgBorderWidth: null !default;
+$imgPadding: null !default;
+$briefBg: null !default;
+$briefWidth: null !default;
+$tableHeaderBg: null !default;
+$tableBg: null !default;
+$tableHeaderBorder: null !default;
+$tableHeaderAlign: null !default;
+$linkColor: null !default;
+
+body {
+	font: $bodyFont;
+	background-color: $bodyBg;
+	color: $bodyFontColor;
+	#content {
+		margin: 10px 60px;
+		padding: 35px;
+		background-color: $contentBg;
+		
+		h1, h2 {
+			color: $headerColor;
+			margin-top: 40px;
+		}
+		
+		h1 {
+			margin-top: 0;
+			font-weight: 600;
+		}
+		
+		h2 {
+			font-style: $headerStyle;
+			font-weight: 100;
+		}
+		
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		
+		img {
+			border: $imgBorderWidth solid $imgBorderColor;
+			padding: $imgPadding;
+			position: relative;
+			top: 4px;
+
+			&.img-left {
+				float: left;
+				margin-right: 25px;
+				margin-bottom: 15px;
+			}
+
+			&.img-right {
+				float: right;
+				margin-left: 10px;
+			}
+		}
+		
+		.brief {
+			background-color: $briefBg;
+			width: $briefWidth;
+			padding: 18px;
+			font-style: italic;
+			
+			@if $briefWidth != null {
+				float: left;
+				margin-right: 20px;
+				font-weight: 600;
+				
+			}
+			@else {
+				margin-bottom: 20px;
+			}
+		}
+		
+		a {
+			display: inline-block;
+			margin-bottom: 10px;
+			color: $linkColor;
+		}
+		
+		table {
+			border-collapse: collapse; 
+			
+			caption {
+				text-align: right;
+				font-size: 16px;
+				font-style: italic;
+				margin-bottom: 10px;
+			}
+			tr {
+				border-bottom: 1px solid $tableHeaderBg;
+				
+				th {
+					background-color: $tableHeaderBg;
+					border-right: 1px solid $tableHeaderBorder;
+					text-align: $tableHeaderAlign;
+					
+					&:last-child {
+						border-right: none;
+					}
+				}
+				
+				td {
+					background-color: $tableBg;
+				}
+				
+				th, td {
+					padding: 8px 20px;
+				}
+			}
+		}
+	}
+}

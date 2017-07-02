@@ -1,0 +1,58 @@
+body {
+  font: normal 15px/20px Georgia, "Times New Roman", Times, serif;
+  background-color: #659a01;
+  color: #fff; }
+  body #content {
+    margin: 10px 60px;
+    padding: 35px;
+    background-color: #666701; }
+    body #content h1, body #content h2 {
+      color: #fecc10;
+      margin-top: 40px; }
+    body #content h1 {
+      margin-top: 0;
+      font-weight: 600; }
+    body #content h2 {
+      font-weight: 100; }
+    body #content p:last-child {
+      margin-bottom: 0; }
+    body #content img {
+      border: 1px solid #fff;
+      padding: 10px;
+      position: relative;
+      top: 4px; }
+      body #content img.img-left {
+        float: left;
+        margin-right: 25px;
+        margin-bottom: 15px; }
+      body #content img.img-right {
+        float: right;
+        margin-left: 10px; }
+    body #content .brief {
+      background-color: #677d01;
+      padding: 18px;
+      font-style: italic;
+      margin-bottom: 20px; }
+    body #content a {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #fecc10; }
+    body #content table {
+      border-collapse: collapse; }
+      body #content table caption {
+        text-align: right;
+        font-size: 16px;
+        font-style: italic;
+        margin-bottom: 10px; }
+      body #content table tr {
+        border-bottom: 1px solid #94a34e; }
+        body #content table tr th {
+          background-color: #94a34e;
+          border-right: 1px solid transparent;
+          text-align: left; }
+          body #content table tr th:last-child {
+            border-right: none; }
+        body #content table tr td {
+          background-color: #677d01; }
+        body #content table tr th, body #content table tr td {
+          padding: 8px 20px; }
